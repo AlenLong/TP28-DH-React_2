@@ -41,7 +41,3 @@ Dashboard.defaultProp = {
     icono: 'fa-film',
 }
 export default Dashboard
-
-
-/* Uncaught Error: Objects are not valid as a React child (found: object with keys {}). 
-If you meant to render a collection of children, use an array instead. */
