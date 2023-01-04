@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Dashboard(titulo, color, cifra, icono) {
+function Dashboard({titulo, color, cifra, icono, id, key}) {
     return (
 
-        <div className="row">
+        <div className="row" key={key}>
 
         <div className="col-md-4 mb-4">
             <div className={`card ${color} shadow h-100 py-2`}>
