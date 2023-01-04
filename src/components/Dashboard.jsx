@@ -1,10 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 function Dashboard({titulo, color, cifra, icono, id, key}) {
     return (
 
         <div className="row" key={key}>
-
         <div className="col-md-4 mb-4">
             <div className={`card ${color} shadow h-100 py-2`}>
                 <div className="card-body">
@@ -22,11 +22,24 @@ function Dashboard({titulo, color, cifra, icono, id, key}) {
         </div>
         
         </div>
-
-
     )
 }
-
+Dashboard.propTypes = {
+    id : PropTypes.number,
+    key : PropTypes.string,
+    titulo : PropTypes.string,
+    color: PropTypes.string,
+    cifra: PropTypes.string,
+    icono: PropTypes.string,
+}
+Dashboard.defaultProp = {
+    id : 1,
+    key : 'key',
+    titulo : 'Movies in Data Base',
+    color: 'border-left-warning',
+    cifra: '21',
+    icono: 'fa-film',
+}
 export default Dashboard
 
 
