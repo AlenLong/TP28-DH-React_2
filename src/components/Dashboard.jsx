@@ -1,7 +1,9 @@
 import React from 'react'
 
-function dashboard(titulo, color, cifra, icono) {
+function Dashboard(titulo, color, cifra, icono) {
     return (
+
+        <div className="row">
 
         <div className="col-md-4 mb-4">
             <div className={`card ${color} shadow h-100 py-2`}>
@@ -18,12 +20,14 @@ function dashboard(titulo, color, cifra, icono) {
                 </div>
             </div>
         </div>
+        
+        </div>
 
 
     )
 }
 
-export default dashboard
+export default Dashboard
 
 
 /* Uncaught Error: Objects are not valid as a React child (found: object with keys {}). 
